@@ -9,8 +9,12 @@ variable "region" {
     description = "AWS region"
 }
 variable "username" {
-    description = "This set a username to the databases"
+    description = "The username for the databases"
+    type        = string
+    sensitive   = true
 }
 variable "password" {
-    description = "This set a password to the databases"
+    description = "The password to the databases"
+    type        = string
+    sensitive   = true
 }
